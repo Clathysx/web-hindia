@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Refleksi Hindia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #1e003c, #2d1b4c);
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 60px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 24px;
+      color: #ff6a95;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .section-title {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    .section-title h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #ccc;
+      font-size: 16px;
+    }
+
+    .quotes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px 60px;
+    }
+
+    .quote-box {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 12px;
+      font-style: italic;
+      transition: 0.3s;
+    }
+
+    .quote-box:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .quote-source {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #ff6a95;
+      text-align: right;
+    }
+
+    .narrative-section {
+      padding: 60px;
+      background-color: rgba(255, 255, 255, 0.02);
+    }
+
+    .narrative {
+      margin-bottom: 40px;
+      border-left: 4px solid #ff6a95;
+      padding-left: 20px;
+    }
+
+    .narrative h3 {
+      color: #ff6a95;
+      margin-bottom: 10px;
+    }
+
+    .narrative p {
+      color: #ccc;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .music-player {
+      text-align: center;
+      padding: 40px 0 20px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    form label {
+      color: #cac1c4;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    form select,
+    form input,
+    form textarea {
+      background-color: rgba(255, 255, 255, 0.08);
+      color: rgb(232, 121, 121);
+      border: none;
+      border-radius: 6px;
+      padding: 10px;
+      width: 100%;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    form select:focus,
+    form input:focus,
+    form textarea:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px #c7aab2;
+    }
+
+    #other-song-container {
+      display: none;
+    }
+
+    button[type="submit"] {
+      background-color: #14011d;
+      color: #ff6a95;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 30px 0;
+      text-align: center;
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ff6a95;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">HINDIA</div>
+    <nav>
+      <a href="Home.html">Beranda</a>
+      <a href="Album.html">Album</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Blog.html">Blog</a>
+      <a href="Kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="section-title">
+    <h1>Refleksi & Cerita</h1>
+    <p>Potongan pemikiran, proses kreatif, dan suara hati dari balik musik Hindia.</p>
+  </section>
+
+  <div class="music-player">
+    <audio controls>
+      <source src="audio/Hindia - Evaluasi.mp3" type="audio/mp3">
+    </audio>
+    <p style="color:#ccc; font-size:12px; margin-top:10px;">"Evaluasi" — Hindia</p>
+  </div>
+
+  <section class="quotes-grid">
+    <div class="quote-box">
+      "Kita semua gagal, Ambil sedikit tisu, Bersedihlah secukupnya."
+      <div class="quote-source">— Secukupnya</div>
+    </div>
+    <div class="quote-box">
+      "Berpura-pura paham dunia, padahal takut kehilangan arah."
+      <div class="quote-source">— Evaluasi</div>
+    </div>
+    <div class="quote-box">
+      "Segalanya datang dan pergi, apapun yang terjadi, tetap bernapas."
+      <div class="quote-source">— Apapun Yang Terjadi</div>
+    </div>
+  </section>
+
+  <section class="narrative-section">
+    <div class="narrative">
+      <h3>Di Balik “Rumah ke Rumah”</h3>
+      <p>Perjalanan sunyi ini bukan tentang tempat fisik, tetapi tentang rasa: seseorang yang membuat kita merasa utuh. Lagu ini adalah pencarian rumah sejati yang seringkali tersembunyi dalam pelukan, bukan alamat.</p>
+    </div>
+    <div class="narrative">
+      <h3>Malam Saat “Evaluasi” Ditulis</h3>
+      <p>Ditulis di tengah malam penuh kebingungan, “Evaluasi” adalah pengakuan, bukan jawaban. Lagu ini menemani yang tersesat dengan pesan sederhana: Tak apa belum selesai.</p>
+    </div>
+    <div class="narrative">
+      <h3>Kenapa Saya Menulis “Secukupnya”</h3>
+      <p>Baskara menulis "Secukupnya" sebagai pengingat untuk menyayangi diri sendiri. Lagu ini menyuarakan kepedulian pada kesehatan mental dan menjadi pelipur lara bagi mereka yang diam-diam berjuang.</p>
+    </div>
+  </section>
+
+  <section class="narrative-section">
+    <div class="narrative">
+      <h3>Perjalanan Emosional Hindia</h3>
+      <ul style="list-style: none; padding-left: 0;">
+        <li><strong style="color: #ff6a95;">2018</strong> — Proyek solo dimulai, mengeksplorasi identitas dan kegelisahan kota.</li>
+        <li><strong style="color: #ff6a95;">2019</strong> — Album "Menari dengan Bayangan" rilis, menggugah luka dan eksistensi.</li>
+        <li><strong style="color: #ff6a95;">2023</strong> — "Lagipula Hidup akan Berakhir" reflektif tentang kematian dan kelelahan.</li>
+        <li><strong style="color: #ff6a95;">2025</strong> — Blog ini menjadi arsip hati Hindia dan pendengarnya.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="narrative-section">
+    <div class="narrative">
+      <h3>Suara Pendengar</h3>
+      <blockquote style="font-style: italic; color: #ddd; border-left: 4px solid #ff6a95; padding-left: 20px; margin-top: 20px;">
+        “Lagu ‘Secukupnya’ menyelamatkan gue di masa terberat dalam hidup. Rasanya kayak ada yang ngerti dan bilang, 'nggak apa-apa nangis.'”
+        <footer style="margin-top: 10px; color: #ff6a95;">— Dira, Jakarta</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="narrative-section">
+    <div class="narrative">
+      <h3>Apa yang Tak Terlihat di Balik Lagu</h3>
+      <p>Di balik lirik puitis Hindia, ada luka yang nyata. Lagu-lagunya adalah ruang aman, bukan sekadar hiburan. Refleksi ini mengajak kita untuk mendengarkan dengan hati, bukan hanya telinga.</p>
+    </div>
+  </section>
+
+  <form>
+    <label for="favorite-song">Lagu Hindia yang paling menyentuhmu:</label>
+    <select id="favorite-song" name="favorite-song" onchange="toggleOtherInput()">
+      <option value="Secukupnya">Secukupnya</option>
+      <option value="Evaluasi">Evaluasi</option>
+      <option value="Rumah ke Rumah">Rumah ke Rumah</option>
+      <option value="Apapun yang Terjadi">Apapun yang Terjadi</option>
+      <option value="Lainnya">Lainnya</option>
+    </select>
+
+    <div id="other-song-container">
+      <label for="other-song">Tulis judul lagu lainnya:</label>
+      <input type="text" id="other-song" name="other-song" placeholder="Judul lagu lain...">
+    </div>
+
+    <label for="quote">Kutipan Hindia favoritmu dan alasannya:</label>
+    <textarea id="quote" name="quote" rows="4" placeholder="Tulis di sini..."></textarea>
+
+    <button type="submit">Kirim</button>
+  </form>
+
+  <footer>
+    <p>&copy; 2025 Hindia Official. Semua hak cipta dilindungi.</p>
+    <p>Ikuti kami di 
+      <a href="https://www.instagram.com/wordfangs/" target="_blank">Instagram</a> | 
+      <a href="https://twitter.com/wordfangs" target="_blank">Twitter</a> | 
+      <a href="https://www.youtube.com/@Hindia" target="_blank">YouTube</a>
+    </p>
+  </footer>
+
+  <script>
+    function toggleOtherInput() {
+      var select = document.getElementById("favorite-song");
+      var otherContainer = document.getElementById("other-song-container");
+      otherContainer.style.display = select.value === "Lainnya" ? "block" : "none";
+    }
+  </script>
+</body>
+</html>

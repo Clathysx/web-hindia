@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri Hindia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #1e003c, #2d1b4c);
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 60px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 24px;
+      color: #ff6a95;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 40px;
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      color: #fff;
+    }
+
+    .hero h3 {
+      color: #ff6a95;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 60px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    #lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 1000;
+    }
+
+    #lightbox img {
+      max-width: 90%;
+      max-height: 80vh;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 36px;
+      color: #ff6a95;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+      padding: 20px;
+      user-select: none;
+    }
+
+    .nav-left {
+      left: 30px;
+    }
+
+    .nav-right {
+      right: 30px;
+    }
+
+    #lightbox-close {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      font-size: 32px;
+      color: #ff6a95;
+      cursor: pointer;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 30px 0;
+      text-align: center;
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ff6a95;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">HINDIA</div>
+    <nav>
+      <a href="Home.html">Beranda</a>
+      <a href="Album.html">Album</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Blog.html">Blog</a>
+      <a href="Kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h3>Visual Dokumentasi</h3>
+    <h1>GALERI HINDIA</h1>
+    <p>Momen panggung, rekaman, hingga keseharian yang terekam dalam lensa.</p>
+  </section>
+
+  <section class="gallery">
+    <img src="img/IMG_9479.JPG" alt="Konser Hindia">
+    <img src="img/IMG_9474.JPG" alt="Studio Session">
+    <img src="img/IMG_9483.JPG" alt="Hindia Ft Nadin Amizah">
+    <img src="img/IMG_9480.JPG" alt="Live Show">
+    <img src="img/IMG_9475.JPG" alt="Cover Mixtape Hindia">
+    <img src="img/IMG_9489.PNG" alt="Stage Hindia">
+    <img src="img/IMG_9486.PNG" alt="Tim Hindia">
+    <img src="img/IMG_9493.PNG" alt="Fans Hindia">
+    <img src="img/IMG_9492.PNG" alt="Penghargaan">
+    <img src="img/IMG_9487.PNG" alt="Stage Hindia">
+  </section>
+
+  <div id="lightbox">
+    <span id="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <button class="nav-btn nav-left" onclick="changeImage(-1)">&#10094;</button>
+    <img id="lightbox-img" src="" alt="Preview">
+    <button class="nav-btn nav-right" onclick="changeImage(1)">&#10095;</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Hindia Official. Semua hak cipta dilindungi.</p>
+    <p>Ikuti kami di 
+      <a href="https://www.instagram.com/wordfangs/" target="_blank">Instagram</a> | 
+      <a href="https://twitter.com/wordfangs" target="_blank">Twitter</a> | 
+      <a href="https://www.youtube.com/@Hindia" target="_blank">YouTube</a>
+    </p>
+  </footer>
+
+  <script>
+    const images = document.querySelectorAll('.gallery img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    let currentIndex = 0;
+
+    images.forEach((img, index) => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+        currentIndex = index;
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.style.display = 'none';
+    }
+
+    function changeImage(direction) {
+      currentIndex += direction;
+      if (currentIndex < 0) currentIndex = images.length - 1;
+      if (currentIndex >= images.length) currentIndex = 0;
+      lightboxImg.src = images[currentIndex].src;
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowRight") changeImage(1);
+      if (e.key === "ArrowLeft") changeImage(-1);
+    });
+  </script>
+
+</body>
+</html>

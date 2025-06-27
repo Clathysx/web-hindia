@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Album 2 - Hindia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #1e003c, #2d1b4c);
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 60px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 24px;
+      color: #ff6a95;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 40px;
+      background: url('img/ALBUM2.jpg') no-repeat center;
+      background-size: cover;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(30, 0, 60, 0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #fff;
+    }
+
+    .hero h3 {
+      color: #ff6a95;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    .section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: #ff6a95;
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+
+    .section p,
+    .section li,
+    .section blockquote {
+      color: #ccc;
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .section blockquote {
+      font-style: italic;
+      border-left: 3px solid #ff6a95;
+      padding-left: 15px;
+      margin-top: 10px;
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    ul.tracklist {
+      list-style: square inside;
+      padding-left: 0;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.3);
+      padding: 30px 0;
+      text-align: center;
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #ff6a95;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">HINDIA</div>
+    <nav>
+      <a href="Home.html">Beranda</a>
+      <a href="Album.html">Album</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Blog.html">Blog</a>
+      <a href="Kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h3>ALBUM 2</h3>
+      <h1>Lagipula Hidup Akan Berakhir</h1>
+      <p>Ekspresi jujur dan eksistensial tentang kematian, kehilangan, dan bagaimana hidup harus terus berjalan.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Tentang Album</h2>
+    <p>"Lagipula Hidup Akan Berakhir" merupakan lanjutan perjalanan musikal Hindia yang dirilis pada tahun 2023.
+        Album ini hadir dengan pendekatan yang lebih eksperimental dan introspektif dibandingkan debut sebelumnya.
+        Baskara Putra menyuguhkan eksplorasi lirik yang lebih gelap dan kontemplatif, menyentuh tema-tema besar seperti kematian,
+        penerimaan, trauma masa lalu, serta pencarian jati diri di tengah dunia yang terus berubah.</p>
+    <p>Dalam album ini, Hindia tak hanya menyuarakan keresahan pribadi, tetapi juga mencerminkan kegelisahan kolektif generasi muda: tentang tekanan sosial,
+        masa depan yang tidak pasti, dan rasa takut akan kehilangan arah. Judul album yang terkesan fatalistik, “Lagipula Hidup Akan Berakhir,”
+        bukan ajakan untuk menyerah, melainkan bentuk penerimaan atas kefanaan hidup, sekaligus ajakan untuk menjalani hari-hari dengan lebih jujur dan sadar.</p>
+    <p>Secara musikal, album ini menampilkan perpaduan elemen ambient, elektronik, alternative pop, hingga spoken word yang kuat secara atmosfer.
+        Produksinya lebih berlapis, nuansanya lebih kelam namun tetap menyisakan ruang untuk harapan. Ini adalah album yang tidak hanya didengarkan,
+        tapi juga dirasakan—sebuah refleksi sonik yang mengajak pendengarnya untuk berhenti sejenak dan merenung.</p>
+  </section>
+
+  <section class="section two-columns">
+    <div>
+      <h2>Daftar Lagu</h2>
+      <ul class="tracklist">
+        <li>Masalah Masa Depan</li>
+        <li>Janji Palsu</li>
+        <li>Matahari Tenggelam</li>
+        <li>Siapa yang akan Datang ke Pemakamanmu Nanti?</li>
+        <li>Selebrisik</li>
+        <li>Satu Hari Lagi</li>
+        <li>Cincin</li>
+        <li>Forgot Password</li>
+        <li>Alexandra</li>
+        <li>Bayangkan Jika Kita Tidak Menyerah</li>
+        <li>Kita Ke Sana</li>
+        <li>Berdansalah, Karir ini tak ada Artinya</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Perjalanan Album</h2>
+      <ul class="tracklist">
+        <li>Konsep & penulisan: 2022</li>
+        <li>Rekaman: awal 2023</li>
+        <li>Rilis resmi: Oktober 2023</li>
+      </ul>
+      <h2>Dengarkan Album</h2>
+      <p>Tersedia di:
+        <a href="https://open.spotify.com/artist/51kyrUsAVqUBcoDEMFkX12" target="_blank">Spotify</a>,
+        <a href="https://music.youtube.com/channel/UCzhVLh7xVyH3MpqO_KY6SYg" target="_blank">YouTube Music</a>,
+        <a href="https://music.apple.com/us/artist/hindia/1440146558" target="_blank">Apple Music</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Makna Lagu-Lagu</h2>
+    <p><strong>Masalah Masa Depan:</strong> Kecemasan tentang apa yang belum terjadi, dan bagaimana kita mencoba bersiap tanpa kendali.</p>
+    <p><strong>Janji Palsu:</strong> Sebuah renungan tentang kata-kata yang tidak ditepati dan dampaknya bagi penerimanya.</p>
+    <p><strong>Siapa yang Akan Datang ke Pemakamanku Nanti?</strong> Kontemplasi tentang kehadiran dan kehilangan yang menyentuh sisi terdalam.</p>
+  </section>
+
+  <section class="section">
+    <h2>Testimoni Pendengar</h2>
+    <blockquote>
+      “Album ini gelap tapi jujur. Seperti membaca isi kepala seseorang saat tengah malam.” – @penikmathindia
+    </blockquote>
+    <blockquote>
+      “'Untuk Apa / Untuk Apa?' bikin aku nangis di kereta. Lagu yang terlalu relate.” – review anonim
+    </blockquote>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hindia Official. Semua hak cipta dilindungi.</p>
+    <p>Ikuti kami di 
+      <a href="https://www.instagram.com/wordfangs/" target="_blank">Instagram</a> | 
+      <a href="https://twitter.com/wordfangs" target="_blank">Twitter</a> | 
+      <a href="https://www.youtube.com/@Hindia" target="_blank">YouTube</a>
+    </p>
+  </footer>
+
+</body>
+</html>

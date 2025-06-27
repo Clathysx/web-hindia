@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Album 1 - Hindia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #1e003c, #2d1b4c);
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 60px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 24px;
+      color: #ff6a95;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 40px;
+      background: url(img/bas.jpg) no-repeat center;
+      background-size: cover;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(30, 0, 60, 0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      color: #fff;
+    }
+
+    .hero h3 {
+      color: #ff6a95;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    .section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: #ff6a95;
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+
+    .section p,
+    .section li,
+    .section blockquote {
+      color: #ccc;
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .section blockquote {
+      font-style: italic;
+      border-left: 3px solid #ff6a95;
+      padding-left: 15px;
+      margin-top: 10px;
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    ul.tracklist {
+      list-style: square inside;
+      padding-left: 0;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.3);
+      padding: 30px 0;
+      text-align: center;
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #ff6a95;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">HINDIA</div>
+    <nav>
+      <a href="Home.html">Beranda</a>
+      <a href="Album.html">Album</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Blog.html">Blog</a>
+      <a href="Kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h3>ALBUM 1</h3>
+      <h1>Menari Dengan Bayangan</h1>
+      <p>Refleksi emosional kehidupan urban dan personal dalam bentuk lagu-lagu puitis dan jujur.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Tentang Album</h2>
+    <p>"Menari Dengan Bayangan" adalah album debut solo dari Hindia (Baskara Putra) yang dirilis pada tahun 2019. Album ini merupakan refleksi personal dan emosional dari pengalaman hidup Baskara, yang sebelumnya dikenal lewat band .Feast. Dalam album ini, ia mengangkat tema-tema seperti kesehatan mental, hubungan keluarga, kecemasan eksistensial, dan dinamika kehidupan modern yang sering kali penuh tekanan. Setiap lagu dalam album ini seperti surat terbuka kepada dirinya sendiri maupun kepada pendengarnya, menghadirkan kejujuran yang jarang ditemukan dalam musik pop modern Indonesia.</p>
+    <p>Dikemas dengan aransemen musik yang minimalis namun efektif, Hindia memadukan elemen elektronik, pop, rock, dan spoken word untuk menyampaikan pesannya secara emosional dan mendalam. Album ini tidak hanya populer karena lagunya yang enak didengar, tetapi juga karena kekuatan narasi dan liriknya yang begitu relevan bagi banyak anak muda di era saat ini.</p>
+  </section>
+
+  <section class="section two-columns">
+    <div>
+      <h2>Daftar Lagu</h2>
+      <ul class="tracklist">
+        <li>Evaluasi</li>
+        <li>Secukupnya</li>
+        <li>Rumah ke Rumah</li>
+        <li>Jam Makan Siang</li>
+        <li>Membasuh</li>
+        <li>Dehidrasi</li>
+        <li>Evakuasi</li>
+        <li>Besok Mungkin Kita Sampai</li>
+        <li>Untuk Apa / Untuk Apa?</li>
+        <li>Mata Air</li>
+        <li>Belum Tidur</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Perjalanan Album</h2>
+      <ul class="tracklist">
+        <li>Awal penulisan: Desember 2018</li>
+        <li>Rekaman: Jan–Jun 2019</li>
+        <li>Rilis resmi: Juli 2019</li>
+      </ul>
+      <h2>Dengarkan Album</h2>
+      <p>Tersedia di:
+        <a href="https://open.spotify.com/artist/51kyrUsAVqUBcoDEMFkX12?si=l25JI_bxSp-qloA8yBUhvQ" target="_blank">Spotify</a>,
+        <a href="https://music.youtube.com/channel/UCzhVLh7xVyH3MpqO_KY6SYg?si=jLQ2C7KMbnYlTrCJ" target="_blank">YouTube Music</a>,
+        <a href="https://music.apple.com/us/artist/hindia/1440146558" target="_blank">Apple Music</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Cerita di Balik Lagu</h2>
+    <p><strong>Evaluasi:</strong> Menggambarkan titik balik emosional dan kesadaran tentang diri.</p>
+    <p><strong>Secukupnya:</strong> Ajakan untuk menerima keterbatasan dan meredakan ekspektasi.</p>
+    <p><strong>Rumah ke Rumah:</strong> Nostalgia dan pencarian kenyamanan yang personal.</p>
+  </section>
+
+  <section class="section">
+    <h2>Respons Pendengar</h2>
+    <blockquote>
+      “Album ini menyelamatkan masa-masa sulitku. Lagu 'Evaluasi' terasa seperti surat untuk diriku sendiri.” – @penggemarhindia
+    </blockquote>
+    <blockquote>
+      “Liriknya terlalu jujur, kadang nyakitin, tapi itu justru yang bikin aku suka Hindia.” – review anonim
+    </blockquote>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hindia Official. Semua hak cipta dilindungi.</p>
+    <p>Ikuti kami di 
+      <a href="https://www.instagram.com/wordfangs/" target="_blank">Instagram</a> | 
+      <a href="https://twitter.com/wordfangs" target="_blank">Twitter</a> | 
+      <a href="https://www.youtube.com/@Hindia" target="_blank">YouTube</a>
+    </p>
+  </footer>
+
+</body>
+</html>

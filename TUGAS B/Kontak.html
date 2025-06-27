@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak Hindia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #1e003c, #2d1b4c);
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 60px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 24px;
+      color: #ff6a95;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 60px;
+      gap: 40px;
+    }
+
+    .contact-left h2 {
+      font-size: 32px;
+      color: #ff6a95;
+      margin-bottom: 20px;
+    }
+
+    .contact-left p {
+      font-size: 15px;
+      color: #ccc;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin-right: 15px;
+      color: #ff6a95;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .contact-form {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+      resize: none;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #ccc;
+    }
+
+    .contact-form button {
+      background-color: #ff6a95;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #e05580;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 30px 0;
+      text-align: center;
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ff6a95;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">HINDIA</div>
+    <nav>
+      <a href="Home.html">Beranda</a>
+      <a href="Album.html">Album</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Blog.html">Blog</a>
+      <a href="Kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="contact-container">
+    <div class="contact-left">
+      <h2>Hubungi Kami</h2>
+      <p>Jika kamu ingin mengundang Hindia, kolaborasi, atau sekadar berbagi cerita, silakan kirim pesan melalui formulir di samping atau hubungi kami lewat media sosial resmi.</p>
+      <p>Email: <a href="mailto:official@hindia.com" style="color: #ccc;">official@hindia.com</a></p>
+    </div>
+
+    <div class="contact-form">
+      <form action="#" method="post">
+        <label for="name">Nama</label>
+        <input type="text" id="name" name="name" placeholder="Nama lengkap" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Alamat email aktif" required>
+
+        <label for="message">Pesan</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <footer style="background: rgba(0,0,0,0.3); padding: 30px 0; text-align: center; color: #ccc; font-size: 14px; margin-top: 40px;">
+  <p>&copy; 2025 Hindia Official. Semua hak cipta dilindungi.</p>
+  <p>Ikuti kami di 
+    <a href="https://www.instagram.com/wordfangs/" target="_blank" style="color: #ff6a95; text-decoration: none;">Instagram</a> | 
+    <a href="https://twitter.com/wordfangs" target="_blank" style="color: #ff6a95; text-decoration: none;">Twitter</a> | 
+    <a href="https://www.youtube.com/@Hindia" target="_blank" style="color: #ff6a95; text-decoration: none;">YouTube</a>
+  </p>
+</footer>
+
+</body>
+</html>

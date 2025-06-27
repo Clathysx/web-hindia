@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Album Hindia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #1e003c, #2d1b4c);
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 60px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 24px;
+      color: #ff6a95;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 40px;
+      background: url(img/album-banner.jpg) no-repeat center;
+      background-size: cover;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(30, 0, 60, 0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      color: #fff;
+    }
+
+    .hero h3 {
+      color: #ff6a95;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 60px;
+      gap: 30px 0px;
+      background-color: #1a0030;
+      place-items: center;
+    }
+
+    .feature-box {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      height: 260px;
+      max-width: 540px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      border: none;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-box:hover {
+      transform: scale(1.02);
+    }
+
+    .feature-box::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    .feature-box-content {
+      position: relative;
+      z-index: 1;
+      max-width: 100%;
+    }
+
+    .feature-box-content h4 {
+      text-align: center;
+      color: #ff6a95;
+      margin-bottom: 10px;
+    }
+
+    .feature-box-content p {
+      text-align: center;
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.3);
+      padding: 30px 0;
+      text-align: center;
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ff6a95;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">HINDIA</div>
+    <nav>
+      <a href="Home.html">Beranda</a>
+      <a href="Album.html">Album</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Blog.html">Blog</a>
+      <a href="Kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h3>Diskografi</h3>
+      <h1>ALBUM HINDIA</h1>
+      <p>Kumpulan karya musikal yang merefleksikan kegelisahan, harapan, dan realitas hidup urban masa kini.</p>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-box" style="background-image: url('img/ALBUM1.jpg'); margin-right: -12px;">
+      <div class="feature-box-content">
+        <h4>Menari Dengan Bayangan (2019)</h4>
+        <p>Album debut Hindia yang mengangkat tema kesehatan mental, keluarga, dan pencarian jati diri. Lagu seperti “Evaluasi” dan “Secukupnya” menjadi anthem generasi muda yang resah terhadap tekanan sosial dan ekspektasi hidup.</p>
+      </div>
+    </div>
+
+    <div class="feature-box" style="background-image: url('img/ALBUM2.jpg'); margin-left: -12px;">
+      <div class="feature-box-content">
+        <h4>Lagipula Hidup Akan Berakhir (2023)</h4>
+        <p>Album ini menggambarkan perjalanan emosional dan eksistensial tentang trauma, kehilangan, dan penerimaan. Disampaikan dengan pendekatan musikal yang lebih gelap dan kompleks, namun tetap menyentuh dan kontemplatif.</p>
+      </div>
+    </div>
+
+    <div class="feature-box" style="background-image: url('img/canvas.jpeg'); grid-column: span 2;">
+      <div class="feature-box-content">
+        <h4>Mixtape: Doves, '25 on Blank Canvas (2024)</h4>
+        <p>Black Canvas #25 adalah mixtape eksploratif Hindia yang dirilis bersama Plain Archives pada 2024. 
+          Proyek ini menampilkan sisi eksperimental Baskara dengan pendekatan suara yang bebas, emosional, dan reflektif —
+           menjadikannya ruang personal untuk berekspresi tanpa batas format.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hindia Official. Semua hak cipta dilindungi.</p>
+    <p>Ikuti kami di 
+      <a href="https://www.instagram.com/wordfangs/" target="_blank">Instagram</a> | 
+      <a href="https://twitter.com/wordfangs" target="_blank">Twitter</a> | 
+      <a href="https://www.youtube.com/@Hindia" target="_blank">YouTube</a>
+    </p>
+  </footer>
+
+</body>
+</html>
